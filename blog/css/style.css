@@ -1,0 +1,206 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    
+    margin: 1.5rem auto;
+    width:100%;
+}
+
+    h1{
+text-align: center;
+  transform: rotate(3deg);
+    position: relative;
+    font-size: 50px
+}
+.highlight{
+    font-size: 40px;
+    border: .5rem solid maroon;
+    background-color: maroon;
+    border-top-left-radius: 10% 30%;
+    border-bottom-right-radius: 10% 30%;
+    box-shadow: black;
+    color:lightgray;
+letter-spacing: 0.2rem;
+}
+
+
+
+.spans{
+    color:black;
+    padding: 10px;
+    background-color: maroon;
+    border-radius: 15px 50px;
+    box-shadow: black;
+    box-shadow: 5px 10px;
+    
+}
+
+
+/* Layout */
+
+main {
+    padding-bottom: 10px;
+    min-width:45rem;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 90%;
+}
+img{
+    width: 100%;
+    display: block;
+    max-width: 400px;
+}
+.mainsection{
+    display: flex;
+}
+.mainsection article{
+    width:75%;
+}
+.mainsection aside{
+    width: 19%;
+    margin-left: 3%;
+    padding-left: 3%;
+    border-left: 2px solid #333;
+  
+}
+footer{
+    display: grid;
+    text-align: right;
+    text-decoration: none;
+}
+.end{
+    text-align: left;
+    
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+.imgbar{
+    display: flex;
+    
+}
+.botimg {
+  padding: 5px;
+
+}
+
+/* Clearfix (clear floats) */
+.row {
+  clear: both;
+}
+.stag {
+   float: left;
+    margin: 0 12px 0 0;
+}
+h4{
+    text-align: center;
+    font-size: 30px;
+   text-decoration: none;
+    display: inline-block;
+    
+  
+}
+h4 a{
+    color: aliceblue
+}
+
+nav {
+    font-size: 23px;
+	margin: 48px 0;
+	padding: 0 5%; 
+    background-color: #fff;
+	border-bottom: 1px solid #fff;
+	  }
+nav a:nth-child(even):hover{
+    color:black;
+    text-decoration-line: line-through;
+    transform: rotate(-10deg);
+}
+nav a:nth-child(odd):hover{
+    color:black;
+    text-decoration-line: line-through;
+    transform: rotate(10deg);
+}
+nav a:nth-child(1):active;
+
+}
+nav:nth-child(odd):focus
+nav:nth-child(odd):hover
+nav:nth-child(odd):active {
+    display: inline-block;
+    transform: rotate(-90deg);
+    
+    
+}
+
+nav a {
+    
+	display: inline-block;
+	padding: 8px 55px;
+	text-decoration: none;
+	font-weight: bold;
+	color: steelblue;
+}
